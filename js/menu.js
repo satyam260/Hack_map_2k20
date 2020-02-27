@@ -19,6 +19,8 @@ var alphaDust = function () {
     }
 
     function _menuShow () {
+        
+        // $('img.beforemenu').hide();
         $('nav a').addClass('menu-active');
         $('.menu-bg').show();
         $('.menu-item').css({opacity: 0});
@@ -40,6 +42,8 @@ var alphaDust = function () {
         TweenLite.to('.menu-container', 0.5, {padding: '0 100px'});
         $('.menu-item').css({opacity: 0});
         _menuOn = false;
+        // $('.beforemenu').show();
+        // $('.aftermenu').hide();
     }
 
     function initMenu() {

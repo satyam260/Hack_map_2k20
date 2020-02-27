@@ -6,22 +6,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="manual.css">
-        <link rel="stylesheet" href="fontawesome.css">
-        <script src="jquey.js"></script>
-        <script src="Tweenmax.js"></script>
-        <script src="menu.js"></script>
-
+        <link rel="stylesheet" href="css/counter.css" />    
+        <link rel="stylesheet" href="css/manual.css">
+        <link rel="stylesheet" href="css/fontawesome.css">
+      
+        
     </head>
     <body>
 
 
 
         <div class="logo">
-            <img src="img/main.png" />
+            <img src="img/main.png" id="logo" class="beforemenu" />
         </div>
         <div class="menu-bg">
+            <!-- <div class="logo">
+                <img src="img/main.png" id="logo" class="aftermenu" />
+            </div> -->
             <div class="menu-container">
                 <ul>
                     
@@ -32,20 +33,32 @@
                     </li>
                     
                     <li class="menu-item">
-                        <a href="archives/index.html">
-                            Archives
+                        <a href="#about">
+                            About
                         </a>
                     </li>
                     
                     <li class="menu-item">
-                        <a href="tags/index.html">
-                            Tags
+                        <a href="register.html">
+                            Register
                         </a>
                     </li>
                     
                     <li class="menu-item">
-                        <a href="friends/index.html">
-                            Friends
+                        <a href="#benefits">
+                            BENEFITS
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#devs">
+                            DEVELOPERS
                         </a>
                     </li>
                     
@@ -68,7 +81,20 @@
                 </p>
             </div>
         </div>
+        <div class="col-md-4 mx-1">
+            
+        <div id="countdown">
+            <h3 class="text-light">Hackathon starts in </h3>
+            <div id='tiles'></div>
+            
+          </div>
+        </div>
 
 
+          <!-- JS FILES -->
+          <script src="js/jquey.js"></script>
+          <script src="js/Tweenmax.js"></script>
+          <script src="js/menu.js"></script>
+          <script src="js/counter.js" ></script>
     </body>
 </html>
