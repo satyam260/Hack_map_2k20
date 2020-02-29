@@ -38,12 +38,11 @@ var alphaDust = function () {
         $('nav a').removeClass('menu-active');
         TweenLite.to('.menu-bg', 0.5, {opacity: '0', onComplete: function () {
             $('.menu-bg').hide();
+            $('.menu-container').hide();
         }});
         TweenLite.to('.menu-container', 0.5, {padding: '0 100px'});
         $('.menu-item').css({opacity: 0});
         _menuOn = false;
-        // $('.beforemenu').show();
-        // $('.aftermenu').hide();
     }
 
     function initMenu() {
@@ -54,6 +53,7 @@ var alphaDust = function () {
             } else {
                 _menuShow();
             }
+            
         });
 
         $('.menu-bg').click(function (e) {
@@ -61,6 +61,7 @@ var alphaDust = function () {
                 _menuHide();
             }
         });
+        
     }
 
     function displayArchives() {

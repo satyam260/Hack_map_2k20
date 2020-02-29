@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="css/counter.css" />    
         <link rel="stylesheet" href="css/manual.css">
         <link rel="stylesheet" href="css/fontawesome.css">
-      
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
         <title>HACK_MAp 2020</title>
     </head>
     <body>
@@ -31,8 +32,8 @@
                     </li>
                     
                     <li class="menu-item">
-                        <a href="#about">
-                            About
+                        <a href="#div-heading">
+                            About Us
                         </a>
                     </li>
                     
@@ -68,41 +69,86 @@
         <nav>
             <a href="#menu"></a>
         </nav>
-        
-    <div class="row h-100 mx-5 my-4">
-        <!-- <div class="jumbotron"> -->
-            
+
+    <!-- SECTION 1 -->
+    <div class="jumbotron" id="main">
+        <div class="col-md-4 mx-5 mt-5 float-right" id="counter">        
+            <div id="countdown">
+                <h3 class="text-light">Hackathon starts in </h3>
+                <div id='tiles'></div>
+                    <div class="row-md-3 bg-light">
+                        <div class="labels">
+                            <li>Days</li>
+                            <li>Hours</li>
+                            <li>Mins</li>
+                            <li>Secs</li>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <div class="row w-100 h-100 mx-5 my-4" id="main-jumbo">
             <div class="col-md-12 my-3  mx-1 float-left">
+                
                 <div class="col-md-3 my-2">
-                    <h1 class="text-light">HACK_MAp 2020</h1>
+                    <h1 class="text-light" id="main-text">HACK_MAp 2020</h1>
                 </div>
-                <p class="head-para mx-3">
+                
+                <p class="head-para mx-3 my-5" id="para-text">
                     HACK_MAp is a 45 days long hackathon organised by CSI Student Chapter,Guna. It's organised in Jaypee University of Engineering and Technology.
                     This event is visioned to create learning spark and ignite creativity in students to create something and enjoy the process meanwhile too. 
                 </p>
             </div>
-        </div>
-        <div class="col-md-4 mx-5">
-            
-        <div id="countdown">
-            <h3 class="text-light">Hackathon starts in </h3>
-            <div id='tiles'></div>
-            <div class="row-md-3 bg-light">
-            <div class="labels">
-                <li>Days</li>
-                <li>Hours</li>
-                <li>Mins</li>
-                <li>Secs</li>
-              </div>
-            </div>
-          </div>
-        <!-- </div> -->
-
     </div>
+    </div>
+    <!-- end of sec 1 -->
+
+    <!-- 
+            SECTION 2
+     -->
+
+     <div class="jumbotron">
+                <div class="col-md-12 h-25 mx-5 mt-1 text-center">
+                    <h2 id="div-heading" class="text-light">About Us</h2>
+                    <hr class="bg-light" id="heading-hr">
+                </div>
+                <div class="col-md-10 my-2 mx-5">
+                    <p class="head-para mx-3 my-5" id="para-text">
+                        We are CSI development group, we organise events like HACK_MAp, Treasure hunt, cryptic hunt and some other interesting events to take part and also learning something
+                        useful while having fun.
+                    </p>
+                </div>
+               
+     </div>
+
+     <div class="jumbotron">
+        <div class="col-md-12 h-25 mx-5 mt-1 text-center">
+            <h2 id="div-heading" class="text-light">Benefits</h2>
+            <hr class="bg-light" id="heading-hr">
+        </div>
+     </div>
+
+
+     <div class="jumbotron">
+        <div class="col-md-12 h-25 mx-5 mt-1 text-center">
+            <h2 id="div-heading" class="text-light">FAQs</h2>
+            <hr class="bg-light" id="heading-hr">
+        </div>
+     </div>
+
+
+     <div class="jumbotron">
+        <div class="col-md-12 h-25 mx-5 mt-1 text-center">
+            <h2 id="div-heading" class="text-light">Developers</h2>
+            <hr class="bg-light" id="heading-hr">
+        </div>
+     </div>
+
+
           <!-- JS FILES -->
           <script src="js/jquey.js"></script>
           <script src="js/Tweenmax.js"></script>
           <script src="js/menu.js"></script>
           <script src="js/counter.js" ></script>
+          <script src="js/manual.js"></script>
     </body>
 </html>

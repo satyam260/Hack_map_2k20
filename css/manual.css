@@ -1,8 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron:500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html{
+   scroll-behavior: smooth;
+  scrollbar-base-color: #1bbe39;
+  scrollbar-width: 10%;
+}
 body {
   background: #0f1516;
   font-family: 'Orbitron','Open Sans', sans-serif;
+ 
+}
+div.jumbotron#main
+{
+  background-image: url("../img/back.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  width:100%;
+  height: 43vw;
+
+}
+hr#heading-hr
+{
+  width:10%;
+}
+p#para-text
+{
+  font-size: 1.3vw;
 }
 @media (max-width: 33.9em) {
   body {
@@ -126,9 +150,10 @@ nav a:hover {
   }
 }
 
-h1{
+h1#main-text{
   /* font-size: 2vm; */
   animation: glow 2s ease-in-out infinite alternate;
+  font-size:7vh;
 }
 
 p.head-para
@@ -146,4 +171,8 @@ img#logo
   width:7%;
   height:7%;
   margin-left:2%;
+}
+img#about-img
+{
+ 
 }
