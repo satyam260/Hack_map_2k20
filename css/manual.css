@@ -4,6 +4,7 @@ html{
    scroll-behavior: smooth;
   scrollbar-base-color: #1bbe39;
   scrollbar-width: 10%;
+  overflow-x: hidden;
 }
 body {
   background: #0f1516;
@@ -153,9 +154,16 @@ nav a:hover {
 h1#main-text{
   /* font-size: 2vm; */
   animation: glow 2s ease-in-out infinite alternate;
-  font-size:7vh;
+  /* font-size:7vh; */
 }
-
+div#main-jumbo
+{
+  margin:auto;
+}
+div#counter
+{
+  margin:auto;
+}
 p.head-para
 {
   margin-top:2%;
@@ -168,9 +176,10 @@ div.logo
 }
 img#logo
 {
-  width:7%;
-  height:7%;
-  margin-left:2%;
+  width:10%;
+  height:10%;
+  margin-left:6%;
+  margin-top:1%;
 }
 img#about-img
 {

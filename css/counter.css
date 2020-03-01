@@ -4,16 +4,16 @@
 	width: 465px;
 	height: 112px;
 	text-align: center;
-	border: 1px solid #111;
-	border-radius: 5px;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+	/* border: 1px solid #111; */
+	/* border-radius: 5px; */
+	/* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6); */
 	margin: auto;
 	padding: 24px 0;
 	position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
 
-#countdown:before{
+/* #countdown:before{
 	content:"";
 	width: 8px;
 	height: 65px;
@@ -35,7 +35,7 @@
 	display: block;
 	position: absolute;
 	top: 48px; right: -10px;
-}
+} */
 
 #countdown #tiles{
 	position: relative;
