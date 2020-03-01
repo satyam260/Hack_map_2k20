@@ -1,0 +1,109 @@
+.developers {
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+}
+
+.developers .dev-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15vh;
+    padding-left: 80px;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.developers .dev-heading span {
+    color: white;
+    font-size: 80px;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+}
+
+.dev-card-container {
+    width: 100%;
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: [col-1] 10% [col-2] 80% [col-3] 20% [end];
+    grid-template-rows: [row-1] 20vw [row-2] 70vh [row-3] auto [end];
+}
+
+.developers .Cards-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-start: col-2;
+    grid-column-end: col-3;
+    grid-row-start: row-1;
+    grid-row-end: row-3;
+}
+
+.des-card {
+    width: 25%;
+    background-color: #232027;
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    padding-top: 60px;
+}
+
+.des-card .prof-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.des-card .name {
+    width: 100%;
+    text-align: center;
+    padding: 8% 0 2% 0;
+}
+
+.des-card .name span {
+    color: white;
+    font-size: 40px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+.des-card .phone-no {
+    width: 100%;
+    text-align: center;
+    padding: 5% 0 2% 0;
+}
+
+.des-card .phone-no span {
+    color: white;
+    font-family: 'Abel', sans-serif;;
+    font-size: 1.5em;
+}
+
+.des-card .email {
+    width: 100%;
+    text-align: center;
+    padding: 5% 0 2% 0;
+}
+
+.des-card .email span {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Abel', sans-serif;
+}
+
+.des-card .dash {
+    width: 30%;
+    height: 2px;
+    background-color: #768ad9;
+    margin: 15% 0 5% 0;
+}
