@@ -168,7 +168,6 @@ p.head-para
 {
   margin-top:2%;
   color: #756b64;
-  width:60%;
 }
 div.logo
 {
@@ -184,8 +183,8 @@ img#logo
 img#about-img
 {
  border-radius:100%;
- width:30%;
- height:50%;
+ /* width:30%;
+ height:50%; */
  filter: grayscale(100%);
 }
 img#about-img:hover
