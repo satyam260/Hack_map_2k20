@@ -26,6 +26,12 @@
     }
 }
 
+@media (max-width: 33.9em) {
+    body {
+      font-size: 0.7em;
+    }
+}
+
 @media (max-width: 590px){
     .des-card .name span{
         font-size: 30px !important;
