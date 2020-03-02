@@ -6,19 +6,9 @@
     align-items: center;
 }
 
-.developers .dev-heading {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 15vh;
-    padding-left: 80px;
-    padding-top: 50px;
-    text-transform: uppercase;
-}
-
 .dev-card-container {
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 12vh;
     display: grid;
     grid-template-columns: [col-1] 10% [col-2] 80% [col-3] 20% [end];
     grid-template-rows: [row-1] 20vw [row-2] 70vh [row-3] auto [end];
