@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
 .developers {
     background-size: cover;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: column;
 }
 
 .developers .dev-heading {
@@ -14,13 +14,6 @@
     padding-left: 80px;
     padding-top: 50px;
     text-transform: uppercase;
-}
-
-.developers .dev-heading span {
-    color: white;
-    font-size: 80px;
-    font-family: 'Black Ops One', cursive;
-    position: relative;
 }
 
 .dev-card-container {
@@ -73,8 +66,8 @@
 .des-card .name span {
     color: white;
     font-size: 40px;
-    font-family: 'Abel', sans-serif;
     font-weight: bold;
+    font-family: 'Neucha';
 }
 
 .des-card .phone-no {
@@ -85,8 +78,8 @@
 
 .des-card .phone-no span {
     color: white;
-    font-family: 'Abel', sans-serif;;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: 'Neucha';
 }
 
 .des-card .email {
@@ -97,8 +90,8 @@
 
 .des-card .email span {
     color: white;
-    font-size: 1.2em;
-    font-family: 'Abel', sans-serif;
+    font-size: 1.7em;
+    font-family: 'Neucha';
 }
 
 .des-card .dash {

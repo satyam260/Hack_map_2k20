@@ -10,16 +10,14 @@
         <link rel="stylesheet" href="css/manual.css">
         <link rel="stylesheet" href="css/fontawesome.css">
         <link rel="stylesheet" href="css/loader.css">
+        <link rel='stylesheet' href='css/devs.css'>
+        <link rel='stylesheet' href='./css/responsive.css'>
+
         <script src="https://unpkg.com/scrollreveal"></script>
         
         <title>HACK_MAp 2020</title>
     </head>
     <body>
-
-        <!-- Loader -->
-        
-
-
 
     <div class="loader11">
         <div class="fullpage-wrapper">
@@ -42,13 +40,7 @@
             </div>
           </div>
           
-        </div>          
-          
-  
-  
-
-        <!-- END LOADER -->
-
+        </div>  
 
         <div class="logo">
             <img src="img/main.png" id="logo" class="beforemenu" />
@@ -153,7 +145,7 @@
                 <div class="col-md-12 my-2 mx-5">
                     
                     <p class="head-para my-5 float-left" id="para-text">
-                        Hack_MAp is a 1 month-long Event of open source software contribution run by OSDG and DEVELOPMENT CLUB in Tachyon techfest by Computer Society of India(CSI)
+                        HACK_MAp is a 1 month-long Event of open source software contribution run by OSDG and DEVELOPMENT CLUB in Tachyon techfest by Computer Society of India(CSI)
 
                         Technology students ! You're invited to participate in Hack_Map 20 a hackathon at the Jaypee University Of Engineering and Technology. At this 43 days, non-stop digital product development competition, you'll be challenged to use technologies such as Web Development , IoT, Cloud Computing, Image Processing, Big Data, Artificial Intelligence, Embedded Systems,Robotics,Game Development and more to design and build an innovative digital solution to any real-life problem of your choice.
                     </p>
@@ -163,24 +155,76 @@
      </div>
     </div>
 
-    <!-- 
-        SECTION 3 
-                    -->
-                    
-                   
-
+    <div class="developers jumbotron" id='devs'>
+        <div class="col-md-12 h-25 mx-5 mt-1 text-center">
+            <h2 id="div-heading" class="text-light">Developers</h2>
+            <hr class="bg-light" id="heading-hr">
+        </div>
+        <div class="dev-card-container">
+          <div class="Cards-div">
+            <div class="des-card">
+                <img class="prof-pic" src='./img/richesh.jpeg'></img>
+                <div class="name"><span>Richesh Gupta</span></div>
+                <div class="phone-no"><span>+91 8318889189</span></div>
+                <div class="email"><span>rgrichesh45@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+            <div class="des-card">
+                <img class="prof-pic" src='./img/satyam.jpg'></img>
+                <div class="name"><span>Satyam Upadhyay</span></div>
+                <div class="phone-no"><span>+91 8810499445</span></div>
+                <div class="email"><span>satyamupadhyay20@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+            <div class="des-card">
+                <img class="prof-pic" src='./img/harsh.jpg'></img>
+                <div class="name"><span>Harsh Soni</span></div>
+                <div class="phone-no"><span>+91 7390912111</span></div>
+                <div class="email"><span>soniharsh441@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+            <div class="des-card">
+                <img class="prof-pic" src='./img/pulkit.jpg'></img>
+                <div class="name"><span>Pulkit Yadav</span></div>
+                <div class="phone-no"><span>+91 7080527386</span></div>
+                <div class="email"><span>pulkit29.yadav@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+            <div class="des-card">
+                <img class="prof-pic" src='./img/ankit.jpeg'></img>
+                <div class="name"><span>Ankit Singh</span></div>
+                <div class="phone-no"><span>+91 8579961909</span></div>
+                <div class="email"><span>soniharsh441@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+            <div class="des-card">
+                <img class="prof-pic" src='./img/ishaan.png'></img>
+                <div class="name"><span>Ishaan</span></div>
+                <div class="phone-no"><span>+91 8209691663</span></div>
+                <div class="email"><span>soniharsh441@gmail.com</span></div>
+                <div class="dash"></div>
+            </div>
+          </div>
+        </div>
+      </div>                
+    
           <!-- JS FILES -->
           <script src="js/jquey.js"></script>
           <script src="js/Tweenmax.js"></script>
           <script src="js/menu.js"></script>
           <script src="js/counter.js" ></script>
           <script src="js/manual.js"></script>
-          <script>
+          <!-- <script>
                             
                 $(window).load(function() {
                     $('.fullpage-wrapper').hide();
                 });
                    
+          </script> -->
+          <script>
+            setTimeout(function(){
+              $('.loader11').fadeToggle();
+            }, 1500);
           </script>
     </body>
 </html>

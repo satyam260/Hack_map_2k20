@@ -1,0 +1,36 @@
+@media (max-width: 1200px) and (min-width: 900px) {
+    .developers .Cards-div {
+        margin-top: -20vh;
+    }
+    .developers .Cards-div .des-card {
+        width: 35%;
+        height: 45%;
+        margin: 5.5vh 20px 0 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .des-card .name span {
+        font-size: 30px !important;
+    }
+    .des-card .email span{
+        font-size: 0.8em !important; 
+    }
+    .developers .Cards-div {
+        margin-top: -20vh;
+    }
+    .developers .Cards-div .des-card {
+        width: 35%;
+        height: 40%;
+        margin: 10.5vh 20px 0 20px;
+    }
+}
+
+@media (max-width: 590px){
+    .des-card .name span{
+        font-size: 30px !important;
+    }
+    .developers .Cards-div .des-card {
+        width: 40%;
+    }
+}
