@@ -1,20 +1,72 @@
+@media (max-width: 1440px) {
+    .text-center {
+        padding-top: 15vh;
+    }
+}
 @media (max-width: 1200px) and (min-width: 900px) {
+    h1#main-text {
+        font-size: 4em;
+        margin-bottom: -100px !important;
+    }
+    h3.text-light {
+        font-size: 1.7em !important;
+    }
+    #countdown {
+        width: 460px;
+    }
+    img#back {
+        margin-top: -50vh;
+    }
+    .about {
+        padding-top: 30vh;
+        font-size: 1.5em;
+    }
+    img#about-img {
+        width: 35vw;
+        height: 30vh;
+    }
+    .benefits {
+        font-size: 1.5em;
+    }
     .developers .Cards-div {
-        margin-top: -20vh;
+        padding-bottom: 10vh !important;
     }
     .developers .Cards-div .des-card {
         width: 35%;
         height: 45%;
         margin: 5.5vh 20px 0 20px;
+        margin-bottom: 20vh;
     }
 }
 
 @media (max-width: 950px) {
+    h1#main-text {
+        font-size: 3em;
+    }
+    .about {
+        font-size: 1.2em;
+    }
+    p#para-text {
+        margin-top: 28vh !important;
+    }
+    img#about-img {
+        width: 25vw;
+        height: 20vh;
+    }
+    .benefits {
+        font-size: 1.2em;
+    }
+    .dev {
+        font-size: 1.2em;
+    }
+    .Cards-div {
+        padding-top: 20vh;
+    }
     .des-card .name span {
         font-size: 30px !important;
     }
     .des-card .email span{
-        font-size: 0.8em !important; 
+        font-size: 1em !important; 
     }
     .developers .Cards-div {
         margin-top: -20vh;
@@ -23,6 +75,35 @@
         width: 35%;
         height: 40%;
         margin: 10.5vh 20px 0 20px;
+        margin-bottom: 15vh;
+        
+    }
+}
+
+@media (max-width: 715px) {
+    .des-card .phone-no span {
+        font-size: 1.5em ;
+    }
+}
+
+@media (max-width: 530px){
+    .developers .Cards-div .des-card {
+        width: 65% !important;
+        height: 45%;
+        margin: 5.5vh 20px 0 20px;
+        margin-bottom: 15vh;
+    }
+    .des-card .name span{
+        font-size: 35px !important;
+    }
+    .des-card .phone-no span{
+        font-size: 1.8em;
+    }
+    .des-card .email span{
+        font-size: 1.7em !important;
+    }
+    .developers .Cards-div .des-card {
+        width: 40%;
     }
 }
 
@@ -32,11 +113,3 @@
     }
 }
 
-@media (max-width: 590px){
-    .des-card .name span{
-        font-size: 30px !important;
-    }
-    .developers .Cards-div .des-card {
-        width: 40%;
-    }
-}
