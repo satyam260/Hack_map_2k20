@@ -4,7 +4,9 @@
 	width: 465px;
 	height: 112px;
 	text-align: center;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-8vh;
 	padding: 24px 0px;
 	position: relative;
 }
@@ -66,7 +68,7 @@
 	z-index: 100;
 }
 
-#countdown .labels li{
+#countdown .labels li#d{
 	font-size: 1.4em !important;
 	width: 102px;
 	font: bold 15px 'Orbitron';

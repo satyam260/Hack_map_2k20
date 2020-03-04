@@ -9,7 +9,9 @@ html{
   margin: 0;
   padding: 0;
 }
-
+li#faq{
+  margin:5%;
+}
 body {
   background: #0f1516;
   font-family: 'Orbitron','Open Sans', sans-serif;
@@ -168,9 +170,9 @@ nav a:hover {
 
 h1#main-text{
   animation: glow 2s ease-in-out infinite alternate;
-  font-size: 5em;
+  font-size: 6em;
   padding-bottom: 10vh;
-  margin-top: -12vh;
+  margin-top: -9vh;
   text-align: center;
 }
 
@@ -192,7 +194,10 @@ img#logo{
   margin-left:6%;
   margin-top:1%;
 }
-
+div#footer
+{
+  margin-top:100%;
+}
 img#about-img {
   margin-top: 35vh;
   border-radius:100%;

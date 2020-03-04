@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <script>
+            function detectmob() {
+                if(window.innerWidth <= 974 || window.innerHeight <= 497) {
+                    return true;
+                } else {
+                    return false;
+                }
+                }
+
+                if (detectmob())
+                {
+                    alert("Use Desktop for better experiences!")
+                }
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +34,13 @@
     </head>
     <body>
 
-    <!-- <div class="loader11">
+
+
+        <!-- LOADER -->
+
+        
+
+    <div class="loader11">
         <div class="fullpage-wrapper">
             <div class="reactor-container">
               <div class="reactor-container-inner circle abs-center"></div>
@@ -42,7 +61,11 @@
             </div>
           </div>
           
-        </div>   -->
+        </div>          
+          
+
+
+
 
         <div class="logo">
             <img src="img/main.png" id="logo" class="beforemenu" />
@@ -77,7 +100,7 @@
                     </li>
 
                     <li class="menu-item">
-                        <a href="#faq">
+                        <a href="faq.html">
                             FAQ
                         </a>
                     </li>
@@ -107,16 +130,16 @@
                     <h1 class="main text-light display-2 text-center" id="main-text">HACK_MAp 2020</h1>
                 </div>
 
-                <div class="col-md-4 my-5" id="counter">        
+                <div class="col-md-4 my-0" id="counter">        
                     <div id="countdown">
                         <h3 class="text-light">HACK_MAp starts in </h3>
                         <div id='tiles'></div>
                             <div class="row-md-3 bg-light">
                                 <div class="labels">
-                                    <li>Days</li>
-                                    <li>Hours</li>
-                                    <li>Mins</li>
-                                    <li>Secs</li>
+                                    <li id="d">Days</li>
+                                    <li id="d">Hours</li>
+                                    <li id="d">Mins</li>
+                                    <li id="d">Secs</li>
                                 </div>
                             </div>
                         <img id='back' src='./img/back.svg'>
@@ -167,7 +190,7 @@
                     <img src="img/wrench.svg">
                 </div>
                 <div class="card-footer text-center">
-                    EXPIRIENCE
+                    EXPERIENCE
                 </div>
             </div>
         </div>
@@ -260,13 +283,13 @@
     </div>
 
     <!-- FOOTER -->
-    <!-- <div class="row my-5 w-100 h-100 bg-light">
-        <div class="col- w-100 h-100 text-center">
+    <div class="row my-5 w-100 bg-light" id="footer">
+        <div class="col- w-100 text-center">
             <h1>Made With ❤️ BY CTH,JUET</h1>
         </div>        
 
     </div>
-     -->
+   
           <!-- JS FILES -->
           <script src="js/jquey.js"></script>
           <script src="js/Tweenmax.js"></script>
