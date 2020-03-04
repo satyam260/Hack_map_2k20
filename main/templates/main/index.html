@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,12 +21,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/counter.css" />    
-        <link rel="stylesheet" href="css/manual.css">
-        <link rel="stylesheet" href="css/fontawesome.css">
-        <link rel="stylesheet" href="css/loader.css">
-        <link rel='stylesheet' href='css/devs.css'>
-        <link rel='stylesheet' href='./css/responsive.css'>
+        <link rel="stylesheet" href="{% static 'css/counter.css' %}" />    
+        <link rel="stylesheet" href="{% static 'css/manual.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+        <link rel='stylesheet' href='{% static "css/devs.css" %}'>
+        <link rel='stylesheet' href='{% static "/css/responsive.css" %}'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://unpkg.com/scrollreveal"></script>
@@ -68,7 +69,7 @@
 
 
         <div class="logo">
-            <img src="img/main.png" id="logo" class="beforemenu" />
+            <img src="{% static 'img/main.png' %}" id="logo" class="beforemenu" />
         </div>
         <div class="menu-bg">
             
@@ -82,31 +83,31 @@
                     </li>
                     
                     <li class="menu-item">
-                        <a href="#about">
+                        <a href="{% url 'home' %}#about">
                             About Us
                         </a>
                     </li>
                     
                     <li class="menu-item">
-                        <a href="register.html">
+                        <a href="{% url 'register' %}">
                             Register
                         </a>
                     </li>
                     
                     <li class="menu-item">
-                        <a href="#benefits">
+                        <a href="{% url 'home' %}#benefits">
                             BENEFITS
                         </a>
                     </li>
 
                     <li class="menu-item">
-                        <a href="faq.html">
+                        <a href="{% url 'faq' %}">
                             FAQ
                         </a>
                     </li>
 
                     <li class="menu-item">
-                        <a href="#devs">
+                        <a href="{% url 'home' %}#devs">
                             DEVELOPERS
                         </a>
                     </li>
@@ -142,7 +143,7 @@
                                     <li id="d">Secs</li>
                                 </div>
                             </div>
-                        <img id='back' src='./img/back.svg'>
+                        <img id='back' src='{% static "img/back.svg" %}'>
                     </div>
                 </div>
             </div>  
@@ -170,7 +171,7 @@
                     </p>
                 </div>
                 <div class="col-md-2 mx-3 float-right">
-                    <img src="img/brainstorm.jpg" id="about-img" class="float-right mr-2">
+                    <img src="{% static 'img/brainstorm.jpg' %}" id="about-img" class="float-right mr-2">
                 </div>
                
          </div>
@@ -185,9 +186,9 @@
     </div>  
     <div class="row w-100 h-100 mt-3 mx-5 mb-5">
         <div class="col-md-3 mx-3">
-            <div class="card">
+            <div class="card h-20" id="ex">
                 <div class="card-body ">
-                    <img src="img/wrench.svg">
+                    <img src="{% static 'img/wrench.svg' %}">
                 </div>
                 <div class="card-footer text-center">
                     EXPERIENCE
@@ -196,9 +197,9 @@
         </div>
 
         <div class="col-md-3 mx-3">
-            <div class="card">
+            <div class="card h-20" id="cer">
                 <div class="card-body p-5 text-center">
-                    <img src="img/certi.png">
+                    <img src="{% static 'img/certi.png' %}">
                 </div>
                 <div class="card-footer text-center">
                     CERTIFICATES
@@ -207,9 +208,9 @@
         </div>
 
         <div class="col-md-3 mx-3">
-            <div class="card">
+            <div class="card h-20" id="brief">
                 <div class="card-body p-5 text-center">
-                    <img src="img/brief.svg">
+                    <img src="{% static 'img/brief.svg' %}">
                     <!-- <i class="fab fa-tshirt"></i> -->
                 </div>
                 <div class="card-footer text-center">
@@ -234,43 +235,43 @@
             <div class="developers">
                 <div class="dev-card-container">
                   <div class="Cards-div">
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/richesh.jpeg'></img>
+                    <div class="des-card" id="dev1">
+                        <img class="prof-pic" src='{% static "./img/richesh.jpeg" %}'></img>
                         <div class="name"><span>Richesh Gupta</span></div>
                         <div class="phone-no"><span>+91 8318889189</span></div>
                         <div class="email"><span>rgrichesh45@gmail.com</span></div>
                         <div class="dash"></div>
                     </div>
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/satyam.jpg'></img>
+                    <div class="des-card" id="dev2">
+                        <img class="prof-pic" src='{% static "./img/satyam.jpg" %}'></img>
                         <div class="name"><span>Satyam Upadhyay</span></div>
                         <div class="phone-no"><span>+91 8810499445</span></div>
                         <div class="email"><span>satyamupadhyay20@gmail.com</span></div>
                         <div class="dash"></div>
                     </div>
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/harsh.jpg'></img>
+                    <div class="des-card" id="dev3">
+                        <img class="prof-pic" src='{% static "img/harsh.jpg" %}'></img>
                         <div class="name"><span>Harsh Soni</span></div>
                         <div class="phone-no"><span>+91 7390912111</span></div>
                         <div class="email"><span>soniharsh441@gmail.com</span></div>
                         <div class="dash"></div>
                     </div>
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/pulkit.jpg'></img>
+                    <div class="des-card" id="dev4">
+                        <img class="prof-pic" src='{% static "img/pulkit.jpg" %}'></img>
                         <div class="name"><span>Pulkit Yadav</span></div>
                         <div class="phone-no"><span>+91 7080527386</span></div>
                         <div class="email"><span>pulkit29.yadav@gmail.com</span></div>
                         <div class="dash"></div>
                     </div>
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/ankit.jpeg'></img>
+                    <div class="des-card" id="dev5">
+                        <img class="prof-pic" src='{% static "img/ankit.jpeg" %}'></img>
                         <div class="name"><span>Ankit Singh</span></div>
                         <div class="phone-no"><span>+91 8579961909</span></div>
                         <div class="email"><span>soniharsh441@gmail.com</span></div>
                         <div class="dash"></div>
                     </div>
-                    <div class="des-card">
-                        <img class="prof-pic" src='./img/ishaan.png'></img>
+                    <div class="des-card" id="dev6">
+                        <img class="prof-pic" src='{% static "img/ishaan.png" %}'></img>
                         <div class="name"><span>Ishaan</span></div>
                         <div class="phone-no"><span>+91 8209691663</span></div>
                         <div class="email"><span>soniharsh441@gmail.com</span></div>
@@ -291,11 +292,13 @@
     </div>
    
           <!-- JS FILES -->
-          <script src="js/jquey.js"></script>
-          <script src="js/Tweenmax.js"></script>
-          <script src="js/menu.js"></script>
-          <script src="js/counter.js" ></script>
-          <script src="js/manual.js"></script>
+          <script src="{% static 'js/jquey.js' %}"></script>
+
+          <script src="{% static 'js/Tweenmax.js' %}"></script>
+          <script src="{% static 'js/manual.js' %}"></script>
+          <script src="{% static 'js/menu.js'  %}"></script>
+          <script src="{% static 'js/counter.js' %}" ></script>
+          
           <!-- <script>
                             
                 $(window).load(function() {

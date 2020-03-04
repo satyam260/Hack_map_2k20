@@ -1,20 +1,21 @@
+{% load static %}
 <!Doctype HTML>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      
-    <link rel="stylesheet" href="css/manual.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/loader.css">
-    
-    <link rel='stylesheet' href='./css/responsive.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="{% static 'css/manual.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+        
+        <link rel='stylesheet' href='{% static "/css/responsive.css" %}'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
     <title>FAQ - HACK_MAp 2K20</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
         </div>          
           
     <div class="logo">
-        <img src="img/main.png" id="logo" class="beforemenu" />
+        <img src="{% static 'img/main.png' %}" id="logo" class="beforemenu" />
     </div>
     <div class="menu-bg">
         
@@ -52,25 +53,25 @@
             <ul>
                 
                 <li class="menu-item">
-                    <a href="index.html">
+                    <a href="{% url 'home' %}">
                         Home
                     </a>
                 </li>
                 
                 <li class="menu-item">
-                    <a href="#about">
+                    <a href="{% url 'home' %}#about">
                         About Us
                     </a>
                 </li>
                 
                 <li class="menu-item">
-                    <a href="register.html">
+                    <a href="{% url 'register' %}">
                         Register
                     </a>
                 </li>
                 
                 <li class="menu-item">
-                    <a href="#benefits">
+                    <a href="{% url 'home' %}#benefits">
                         BENEFITS
                     </a>
                 </li>
@@ -82,7 +83,7 @@
                 </li>
 
                 <li class="menu-item">
-                    <a href="#devs">
+                    <a href="{% url 'home' %}#devs">
                         DEVELOPERS
                     </a>
                 </li>
@@ -171,13 +172,16 @@
 
 
 
-    <script src="js/jquey.js"></script>
-    <script src="js/Tweenmax.js"></script>
-    <script src="js/menu.js"></script>
-    <script>
-        setTimeout(function(){
-          $('.loader11').fadeToggle();
-        }, 1500);
-      </script
+              <script src="{% static 'js/jquey.js' %}"></script>
+              <script src="{% static 'js/Tweenmax.js' %}"></script>
+              <script src="{% static 'js/menu.js'  %}"></script>
+              
+              <script src="{% static 'js/manual.js' %}"></script>
+             
+              <script>
+                setTimeout(function(){
+                  $('.loader11').fadeToggle();
+                }, 1500);
+              </script>
 </body>
 </html>
