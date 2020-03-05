@@ -62,12 +62,7 @@
     .Cards-div {
         padding-top: 20vh;
     }
-    .des-card .name span {
-        font-size: 30px !important;
-    }
-    .des-card .email span{
-        font-size: 1em !important; 
-    }
+    
     .developers .Cards-div {
         margin-top: -20vh;
     }
@@ -75,16 +70,18 @@
         width: 35%;
         height: 40%;
         margin: 10.5vh 20px 0 20px;
-        margin-bottom: 15vh;
-        
+        margin-bottom: 15vh;   
+    }
+    .about-text{
+        margin-top: -200px;
     }
 }
 
-@media (max-width: 715px) {
-    .des-card .phone-no span {
-        font-size: 1.5em ;
+@media (max-width: 750px) {
+    .head-para{
+        font-size: 0.8em !important;
     }
-}
+} 
 
 @media (max-width: 530px){
     .developers .Cards-div .des-card {
@@ -93,17 +90,19 @@
         margin: 5.5vh 20px 0 20px;
         margin-bottom: 15vh;
     }
-    .des-card .name span{
-        font-size: 35px !important;
-    }
-    .des-card .phone-no span{
-        font-size: 1.8em;
-    }
-    .des-card .email span{
-        font-size: 1.7em !important;
-    }
+
     .developers .Cards-div .des-card {
         width: 40%;
+    }
+    .developers {
+        height: 3000px;
+    }
+    .head-para {
+        font-size: 0.7em !important;
+    }
+    .about-text{
+        margin-left: -50px !important;
+        width: 70% !important;
     }
 }
 

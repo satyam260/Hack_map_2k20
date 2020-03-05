@@ -35,7 +35,7 @@ hr#heading-hr{
 }
 
 p#para-text{
-  margin-top: 30vh !important;
+  margin-top: 20vh !important;
   font-size: 1.4vw;
   color: #756b64;
   margin-left: 15%;
@@ -220,4 +220,14 @@ img#about-img:hover{
 
 .card{
   margin-top: 10vh;
+}
+
+.about-text{
+  width: 45%;
+  padding-top: 10%; 
+  padding-left: 150px;
+}
+
+.about-img{
+  margin-top: -800px; 
 }
