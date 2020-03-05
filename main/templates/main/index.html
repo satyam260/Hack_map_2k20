@@ -123,7 +123,11 @@
 
     <!-- SECTION 1 -->
 
-    
+    {% if messages %}
+        {% for message in messages %}
+            <h1>{{message}}</h1>
+        {% endfor %}
+    {% endif %}
     <div class="jumbotron" id="home">
     <div class="row w-100 h-100" id="main-jumbo">
             <div class="col-md-12 my-3 mx-auto float-left ">

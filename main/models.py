@@ -12,7 +12,7 @@ class Register(models.Model):
 	emailAddress=models.EmailField(null=False)
 	github_username=models.CharField(max_length=150, null=False, blank=False)
 	project_repo_name=models.CharField(max_length=150, null=False, blank=False)
-	teamSize=models.IntegerField(choices=CHOICES)
+	teamSize=models.IntegerField(choices=CHOICES,null=False,default=1)
 	userDetail1=models.CharField(max_length=150, null=False, blank=False)
 	userDetail2=models.CharField(max_length=150,blank=True,null=True)
 	userDetail3=models.CharField(max_length=150,blank=True,null=True)
