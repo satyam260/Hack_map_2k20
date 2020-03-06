@@ -77,7 +77,10 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+    img#back {
+        display: none;
+    }
     .head-para{
         font-size: 0.8em !important;
     }
