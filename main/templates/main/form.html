@@ -97,25 +97,27 @@
 	</div>
 	<br /><br />
 
-	<form method="POST" action="">
-		<br>
-		
-		<div class="container-fluid">
+	<div class="col-md-6 text-center mx-auto">
+		<form method="POST" action="">
+			<br>
 			
-			<div class="container">
-				<b>
-					
-					{{form | crispy }}
-					{% csrf_token %}
-					<button class="btn">
-						Register
-					</button>
-					
-				</b>
+			<div class="container-fluid">
 				
+				<div class="container">
+					<b>
+						
+						{{form | crispy }}
+						{% csrf_token %}
+						<button class="btn">
+							Register
+						</button>
+						
+					</b>
+					
+				</div>
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
 	<script src="{% static 'js/jquey.js' %}"></script>
 	<script src="{% static 'js/menu.js'  %}"></script>
 	<script src="{% static 'js/Tweenmax.js' %}"></script>
