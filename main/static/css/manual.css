@@ -223,11 +223,13 @@ img#about-img:hover{
 }
 
 .about-text{
-  width: 45%;
-  padding-top: 10%; 
+  width: 55%;
+  /* padding-top: 5%;  */
+  margin-top: -400px !important;
   padding-left: 150px;
 }
 
 .about-img{
-  margin-top: -800px; 
+  margin-top: -900px; 
+  padding-right: 100px;
 }
